@@ -1,0 +1,6 @@
+services: 
+- type: web
+  name: simplegoserver
+  env: go
+  buildCommand: "go build wiki.go"
+  startCommand: ./wiki
