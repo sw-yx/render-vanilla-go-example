@@ -28,7 +28,6 @@ Or you can fork this repo to your github and follow these steps:
 3. Build command: `go build wiki.go`
 4. Start command: `./wiki`
 5. Plans: Whatever you like
-6. (Optional but Recommended) Advanced -> Add Disk -> (Whatever Name) -> Mount Path: `/data`
-7. Click "Create Web Service"!
+6. Click "Create Web Service"!
 
 In a few minutes your site should be live on https://YOUR-SUBDOMAIN-HERE.onrender.com/view/test.
