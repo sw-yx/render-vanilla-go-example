@@ -1,6 +1,26 @@
-# Go Server Example
+# Deploy a vanilla Go server
 
-This is a simple web server writtin in vanilla Go (no frameworks). This is basically what you get following [the tutorial on the official wiki](https://golang.org/doc/articles/wiki/). 
+This is a simple web server writtin in vanilla Go. It is based on [the tutorial on the official wiki](https://golang.org/doc/articles/wiki/). 
+
+No frameworks were harmed in the making of this tutorial.
+
+## Deployment
+
+You can deploy with one click by clicking this nice pretty button:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+Or you can:
+
+1. Fork [this repo](https://github.com/sw-yx/render-vanilla-go-example) on GitHub.
+2. Create a new Web Service on Render, and give Render permission to access your new repo.
+3. Select Go for the environment and use the following values during creation:
+- Build Command: `go build wiki.go`
+- Start Command: `./wiki`
+- This will start the app executable compiled during build.
+
+
+That’s it! Your simple Go server will be available on your `onrender.com` URL as soon as the build finishes. You can access a page on the `/view/test` subdomain, e.g. `https://YOUR-SUBDOMAIN-HERE.onrender.com/view/test`.
 
 ## Local Development
 
@@ -13,21 +33,8 @@ go build wiki.go
 
 You should then be able to navigate to `http://localhost:8080/view/render` and do some basic editing operations.
 
-## Deploying on Render
+## Deployed Screenshots
 
-You can deploy with one click by clicking this nice pretty button:
+![image](https://user-images.githubusercontent.com/6764957/75396941-b19dd780-58c3-11ea-94cc-9b4ad25a0cac.png)
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-Or you can fork this repo to your github and follow these steps:
-
-![render2](https://user-images.githubusercontent.com/6764957/75396140-d85b0e80-58c1-11ea-834d-0e6900ce25c7.gif)
-
-1. Head to https://dashboard.render.com/web/new
-2. Name it whatever you like
-3. Build command: `go build wiki.go`
-4. Start command: `./wiki`
-5. Plans: Whatever you like
-6. Click "Create Web Service"!
-
-In a few minutes your site should be live on https://YOUR-SUBDOMAIN-HERE.onrender.com/view/test.
+![image](https://user-images.githubusercontent.com/6764957/75396956-b6fb2200-58c3-11ea-9d5d-84ebeec78970.png)
